@@ -1,0 +1,237 @@
+/* General Styles */
+body {
+    background-image: url('https://thumbs.dreamstime.com/b/food-cooking-background-ingredients-preparation-vegan-dishes-vegetables-roots-spices-mushrooms-herbs-cutting-board-chef-342341462.jpg'); /* Kitchen Background */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    color: white; /* White Text */
+  }
+  
+  /* Splash Screen */
+  .splash-screen {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent Black Overlay */
+    color: white;
+  }
+  
+  .animated-text {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .display-3 {
+    font-size: 3rem; /* Larger Font Size */
+    font-weight: bold; /* Bold Font */
+  }
+  
+  .lead {
+    font-size: 1.5rem; /* Slightly Larger Subtitle */
+    font-weight: bold; /* Bold Font */
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #343a40; /* Dark Gray Background */
+    border-bottom: 2px solid #6fcf97; /* Light Green Accent Border */
+  }
+  
+  .navbar-brand.text-white {
+    color: white !important; /* White Text for Brand Name */
+    font-weight: bold; /* Bold Font */
+  }
+  
+  .nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold; /* Bold Font */
+    color: black !important; /* Black Text in Navbar */
+    text-shadow: none; /* Remove Shadow for Classic Look */
+  }
+  
+  .nav-link:hover {
+    text-decoration: none; /* Remove Underline on Hover */
+  }
+  
+  /* Modern Buttons in Navbar */
+  .btn-black {
+    background-color: black; /* Black Background */
+    border: 1px solid black; /* Black Border */
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: white !important; /* White Text */
+    transition: all 0.3s ease;
+  }
+  
+  .btn-black:hover {
+    background-color: #495057; /* Slightly Lighter Gray on Hover */
+    transform: scale(1.05);
+  }
+  
+  /* Profile Dropdown */
+  .dropdown-menu {
+    background-color: #343a40; /* Dark Gray Background */
+    border: none; /* Remove Default Border */
+  }
+  
+  .dropdown-item {
+    color: white !important; /* White Text */
+    font-weight: bold; /* Bold Font */
+    transition: all 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #6fcf97; /* Light Green on Hover */
+    color: black !important; /* Black Text on Hover */
+  }
+  
+  /* Dropdown Toggle Button */
+  .nav-link.dropdown-toggle.btn-black {
+    background-color: black; /* Black Background */
+    border: 1px solid black; /* Black Border */
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: white !important; /* White Text */
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link.dropdown-toggle.btn-black:hover {
+    background-color: #495057; /* Slightly Lighter Gray on Hover */
+    transform: scale(1.05);
+  }
+  
+  /* Cards */
+  .card {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent Card Background */
+    border: 1px solid #6fcf97; /* Light Green Border */
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle Shadow for Depth */
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .card-title {
+    font-size: 1.25rem; /* Larger Font Size */
+    font-weight: bold; /* Bold Font */
+    color: #ffffff; /* White Text */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Glow Effect */
+  }
+  
+  .card-text {
+    font-size: 1rem; /* Slightly Larger Font */
+    font-weight: bold; /* Bold Font */
+    color: #d4d4d4; /* Light Gray Text */
+  }
+  
+  .recipe-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain; /* Resize Without Cropping */
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+  }
+  
+  .recipe-image-full {
+    width: 100%;
+    height: auto; /* Maintain Aspect Ratio */
+    object-fit: contain; /* Resize Without Cropping */
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+  }
+  
+  /* Forms */
+  .form-control {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent Input Background */
+    border: 1px solid #6fcf97; /* Light Green Border */
+    color: white; /* White Text in Inputs */
+    font-weight: bold; /* Bold Font */
+  }
+  
+  .form-control::placeholder {
+    color: #d4d4d4; /* Light Gray Placeholder Text */
+  }
+  
+  .text-light {
+    color: #ffffff; /* White Text */
+    font-weight: bold; /* Bold Font */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Glow Effect */
+  }
+  
+  /* Links */
+  .text-green {
+    color: #6fcf97; /* Light Green */
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .text-green:hover {
+    color: #5db88b; /* Slightly Darker Green */
+    text-decoration: underline;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    background-color: #6fcf97; /* Light Green */
+    border-color: #6fcf97;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #5db88b; /* Slightly Darker Green */
+    transform: scale(1.05);
+  }
+  
+  /* Ribbon Effect for Headers */
+  .ribbon {
+    position: relative;
+    background-color: #6fcf97;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .ribbon::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #6fcf97;
+  }
+  
+  /* Mobile-Friendly Design */
+  @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+  
+    .nav-link {
+      font-size: 0.9rem;
+    }
+  
+    .card {
+      margin-bottom: 20px;
+    }
+  
+    .recipe-image {
+      height: 150px;
+    }
+  }
